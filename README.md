@@ -10,8 +10,8 @@ Curso para aprender **Node** de forma práctica
 
 ## 📹 Videos con las clases
 
-- 01: [Introducción a Node.js y módulos](https://www.youtube.com/watch?v=yB4n_K7dZV8)
-- 02: [Creamos una API desde cero](https://www.youtube.com/watch?v=YmZE1HXjpd4)
+- 01: [Introducción a Node.js y módulos](https://www.youtube.com/watch?v=yB4n_K7dZV8) (DONE)
+- 02: [Creamos una API desde cero](https://www.youtube.com/watch?v=YmZE1HXjpd4) (DONE)
 - 03: [Solución de CORS y desarrollo de API](https://www.youtube.com/watch?v=-9d3KhCqOtU)
 - 04: [Arquitectura MVC y despligue de API](https://www.youtube.com/watch?v=ev3Yxva4wI4)
 - 05: [Crea un Base de Datos MySQL y evita los hackers (buenas prácticas)](https://www.youtube.com/watch?v=eCWNQfzuuso&list=RDCMUC3aj05GEEyzdOqYM5FLSFeg&index=3)
