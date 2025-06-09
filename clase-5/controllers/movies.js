@@ -1,24 +1,22 @@
+// import { MovieModel } from '../models/local-file-system/movie.js'
+import { MovieModel } from '../models/mysql/movie.js'
 import { validateMovie, validatePartialMovie } from '../schemas/movies.js'
 
 export class MovieController {
-  constructor ({ movieModel }) {
-    this.movieModel = movieModel
-  }
-
-  getAll = async (req, res) => {
+  static async getAll (req, res) {
     const { genre } = req.query
-    const movies = await this.movieModel.getAll({ genre })
+    const movies = await MovieModel.getAll({ genre })
     res.json(movies)
   }
 
-  getById = async (req, res) => {
+  static async getById (req, res) {
     const { id } = req.params
-    const movie = await this.movieModel.getById({ id })
+    const movie = await MovieModel.getById({ id })
     if (movie) return res.json(movie)
     res.status(404).json({ message: 'Movie not found' })
   }
 
-  create = async (req, res) => {
+  static async create (req, res) {
     const result = validateMovie(req.body)
 
     if (!result.success) {
@@ -26,15 +24,15 @@ export class MovieController {
       return res.status(400).json({ error: JSON.parse(result.error.message) })
     }
 
-    const newMovie = await this.movieModel.create({ input: result.data })
+    const newMovie = await MovieModel.create({ input: result.data })
 
     res.status(201).json(newMovie)
   }
 
-  delete = async (req, res) => {
+  static async delete (req, res) {
     const { id } = req.params
 
-    const result = await this.movieModel.delete({ id })
+    const result = await MovieModel.delete({ id })
 
     if (result === false) {
       return res.status(404).json({ message: 'Movie not found' })
@@ -43,7 +41,7 @@ export class MovieController {
     return res.json({ message: 'Movie deleted' })
   }
 
-  update = async (req, res) => {
+  static async update (req, res) {
     const result = validatePartialMovie(req.body)
 
     if (!result.success) {
@@ -52,7 +50,7 @@ export class MovieController {
 
     const { id } = req.params
 
-    const updatedMovie = await this.movieModel.update({ id, input: result.data })
+    const updatedMovie = await MovieModel.update({ id, input: result.data })
 
     return res.json(updatedMovie)
   }
