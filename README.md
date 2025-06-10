@@ -21,7 +21,7 @@ Curso para aprender **Node** de forma práctica
 - 05: [Crea un Base de Datos MySQL y evita los hackers (buenas prácticas)]
     (https://www.youtube.com/watch?v=eCWNQfzuuso&list=RDCMUC3aj05GEEyzdOqYM5FLSFeg&index=3) (DONE)
 - 06: [Chat en TIEMPO REAL con Node.js, Socket.io, SQL, HTML y CSS]
-    (https://www.youtube.com/watch?v=WpbBhTx5R9Q&list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7&index=6)
+    (https://www.youtube.com/watch?v=WpbBhTx5R9Q&list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7&index=6) (DONE)
 - 07: [Aprende Autenticación de Usuario, Sesión, Cookies y JWT con Node.js]
     (https://www.youtube.com/watch?v=UqnnhAZxRac&list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7&index=7)
 
